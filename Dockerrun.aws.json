@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "construction-tech-api",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/app/logs",
+      "ContainerDirectory": "/app/logs"
+    }
+  ],
+  "Logging": "/app/logs"
+}
